@@ -1,0 +1,34 @@
+{
+    "name": "bangpound/sam-bref-composer-plugin",
+    "type": "composer-plugin",
+    "autoload": {
+        "psr-4": {
+            "Bangpound\\Bref\\Bridge\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bangpound\\Bref\\Bridge\\Test\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Benjamin J Doherty",
+            "email": "bjd@pobox.com"
+        }
+    ],
+    "require": {
+        "composer-plugin-api": "^2.6",
+        "aws/aws-sdk-php": "^3.342"
+    },
+    "require-dev": {
+        "composer/composer": "^2.8",
+        "phpunit/phpunit": "^12.1"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "class": "Bangpound\\Bref\\Bridge\\Composer\\Plugin"
+    }
+}
